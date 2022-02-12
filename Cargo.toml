@@ -31,12 +31,11 @@ winrt = [
 [dependencies]
 bitflags = "1.2"
 memalloc = "0.1.0"
-jack-sys = { version = "0.1.0", optional = true }
+jack-sys = { version = "0.2", optional = true }
 libc = { version = "0.2.21", optional = true }
 
 [target.'cfg(target_os = "linux")'.dependencies]
-alsa = "0.4.3"
-nix = "0.15"
+alsa = "0.6.0"
 libc = "0.2.21"
 
 [target.'cfg(target_os = "macos")'.dependencies]
